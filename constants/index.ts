@@ -1,5 +1,7 @@
-interface World {
-  id: string;
+export type WorldId = `world-${number}`;
+
+export interface World {
+  id: WorldId;
   imgUrl: string;
   title: string;
 }

@@ -2,16 +2,17 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 import { slideIn, staggerContainer, textVariant } from "@/utils/motion";
 
 const Hero = () => (
-  <section className="sm:py-16 xs:py-8 py-12 sm:pl-16 pl-6">
+  <section className="sm:py-16 xs:py-8 py-12 sm:pl-16 pl-6 overflow-hidden">
     <motion.div
       variants={staggerContainer(0, 0)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className="2xl:max-w-[1280px] w-full mx-auto flex flex-col"
     >
       <div className="flex justify-center items-center flex-col relative z-10">
@@ -27,14 +28,14 @@ const Hero = () => (
           <h1 className="font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white">Ness</h1>
         </motion.div>
       </div>
-      <motion.div variants={slideIn("right", "tween", 0, 1)} className="relative w-full md:-mt-[20px] -mt-[12px]">
+      <motion.div variants={slideIn("right", "tween", 0, 1)} className="relative w-full md:-mt-[100px] -mt-[15px]">
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-0 -top-[30px]" />
 
-        <Image src="/cover.png" alt="cover" className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative" height={700} width={1312} priority />
+        <Image src="/cover.png" alt="cover" className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative" height={700} width={1500} priority />
 
         <a href="#explore">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
-            <img src="/stamp.png" alt="stamp" className="sm:w-[155px] w-[100px] sm:h-[100px] object-contain" />
+            <img src="/stamp.png" alt="stamp" className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain" />
           </div>
         </a>
       </motion.div>
