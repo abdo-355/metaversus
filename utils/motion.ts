@@ -29,7 +29,7 @@ export const slideIn = (
 ): Variants => ({
   hidden: {
     x: direction === "left" ? "-115%" : direction === "right" ? "115%" : 0,
-    y: direction === "up" ? "115%" : direction === "down" ? "115%" : 0,
+    y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
   },
   show: {
     x: 0,
