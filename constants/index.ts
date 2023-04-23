@@ -6,7 +6,7 @@ export interface World {
   title: string;
 }
 
-interface NewFeature {
+export interface NewFeature {
   imgUrl: string;
   title: string;
   subtitle: string;
