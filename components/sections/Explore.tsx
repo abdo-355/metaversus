@@ -14,7 +14,7 @@ const Explore = () => {
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12" id="explore">
       <motion.div
-        variants={staggerContainer(0, 0)}
+        variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}

@@ -7,9 +7,9 @@ import Link from "next/link";
 import { slideIn, staggerContainer, textVariant } from "@/utils/motion";
 
 const Hero = () => (
-  <section className="sm:py-16 xs:py-8 py-12 sm:pl-16 pl-6 overflow-hidden">
+  <section className="sm:py-16 xs:py-8 py-12 sm:pl-16 pl-6">
     <motion.div
-      variants={staggerContainer(0, 0)}
+      variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}

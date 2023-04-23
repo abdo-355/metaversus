@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 interface Props {
   title: string | ReactNode;
-  styles: string
+  styles?: string
 }
 
 export const TypingText: FC<Props> = ({ title, styles }) => (
