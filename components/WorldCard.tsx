@@ -9,7 +9,7 @@ interface Props {
 }
 
 const WorldCard: React.FC<Props> = ({ id, position, title }) => {
-    const styles = `absolute w-fit h-fit ${position}`
+    const styles = `absolute lg:block hidden w-fit h-fit ${position}`
     return <div className={styles}>
         <div className="relative lg:w-[217px] w-[180px] lg:h-[167px] h-[130px] border-[10px] border-world backdrop-blur-[6px] rounded-3xl overflow-hidden z-0">
             <Image src={`/planet-0${id}.png`} alt="the upside down" height={500} width={1000} className="absolute scale-[3.5] left-8 top-0" />

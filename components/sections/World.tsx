@@ -19,7 +19,7 @@ const World = () => (
       <TitleText title={<>Track friends around you and invite them to play together in the same world</>} styles="text-center" />
       <motion.div
         variants={fadeIn("up", "tween", 0.3, 1)}
-        className="relative mt-[68px] flex w-full h-[550px]"
+        className="relative mt-[68px] flex w-full lg:h-[550px] md:h-[400px] sm:h-[300px] h-[240px]"
       >
         <Image
           src="/map.png"
@@ -28,8 +28,8 @@ const World = () => (
           width={1250}
           className="w-full h-full object-contain"
         />
-        <WorldAvatar id={1} position="bottom-32 right-28" />
-        <WorldAvatar id={2} position="top-28 left-28" />
+        <WorldAvatar id={1} position="lg:bottom-32 sm:bottom-12 bottom-8 lg:right-28 sm:right-16 right-8" />
+        <WorldAvatar id={2} position="lg:top-28 sm:top-16 top-8 lg:left-28 sm:left-16 left-8" />
         <WorldAvatar id={3} position="top-1/2 left-[45%]" />
         <WorldCard id={2} position="lg:left-36 left-24 top-60" title="The Upside Down" />
         <WorldCard id={3} position="lg:right-80 right-44 lg:top-12 top-20" title="Kadirojo Permai" />
