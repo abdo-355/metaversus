@@ -12,7 +12,7 @@ export interface NewFeature {
   subtitle: string;
 }
 
-interface Insight {
+export interface Insight {
   imgUrl: string;
   title: string;
   subtitle: string;
