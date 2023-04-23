@@ -19,9 +19,10 @@ const WorldCard: React.FC<Props> = ({ id, position, title }) => {
         </div>
         <div className="absolute inset-x-0 bottom-0 h-fit px-6 pb-4 z-30 text-center">
             <div className="flex justify-center py-2">
-                <Image src="/people-04.png" alt="person" width={24} height={24} className="z-50 lg:w-fit lg:h-fit w-[18px] h-[18px]" />
-                <Image src="/people-05.png" alt="person" width={24} height={24} className="-ml-3 z-40 lg:w-fit lg:h-fit w-[18px] h-[18px]" />
-                <Image src="/people-06.png" alt="person" width={24} height={24} className="-ml-3 -z-30 lg:w-fit lg:h-fit w-[18px] h-[18px]" /> <span className="text-white lg:pl-1 pl-[2px] font-light lg:text-base text-sm"> +264 has joined</span>
+                <Image src="/people-04.png" alt="person" width={24} height={24} className="z-50 lg:w-[24px] lg:h-[24px] w-[18px] h-[18px]" />
+                <Image src="/people-05.png" alt="person" width={24} height={24} className="-ml-3 z-40 lg:w-[24px] lg:h-[24px] w-[18px] h-[18px]" />
+                <Image src="/people-06.png" alt="person" width={24} height={24} className="-ml-3 -z-30 lg:w-[24px] lg:h-[24px] w-[18px] h-[18px]" />
+                <span className="text-white lg:pl-1 pl-[2px] font-light lg:text-base text-sm"> +264 has joined</span>
             </div>
             <h3 className="text-white lg:text-xl text-base filter drop-shadow-lg">{title}</h3>
         </div>
